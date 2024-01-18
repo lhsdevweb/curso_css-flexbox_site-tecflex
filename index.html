@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="layout/style.css">
+</head>
+<body onresize="mostraIconeMenu()">
+    <header>
+        <h1>Técnicas de Desing Responsivo</h1>
+    </header>
+    <span id="IconeMenu" class="material-icons" onclick="clicaIconeMenu()">menu</span>
+    <menu id="ItensMenu">
+        <a href="paginas/bandeiradobrasil.html">Bandeira do Brasil</a>
+        <a href="paginas/sitedenoticias.html">Site de Notícias</a>
+        <a href="paginas/santograal.html">Layout Santo Graal </a>
+        <a href="paginas/accordion.html">Accordion de Imagens</a>
+    </menu>
+    <main>
+
+    </main>
+    <footer>
+        2024 Desenvolvido por LHS Tecnologia DevWebsites
+    </footer>
+    <script>
+        function clicaIconeMenu() 
+        {
+            if (ItensMenu.style.display == 'block') 
+                {ItensMenu.style.display = 'none'}
+            else
+                {ItensMenu.style.display = 'block'}
+        }
+        function mostraIconeMenu() 
+        {
+            if (window.innerWidth >= 600)
+                {ItensMenu.style.display = 'block'}
+            else
+                {ItensMenu.style.display = 'none'}
+        }
+    </script>
+</body>
+</html>

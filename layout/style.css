@@ -1,0 +1,43 @@
+@charset "UTF-8";
+* {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
+
+body {display: flex; flex-direction: column; height: 100vh;}
+
+header {text-align: center; padding: 40px; background-color: blueviolet; color: white;} 
+
+#ItensMenu {display: block; text-align: center; padding: 20px;}
+#ItensMenu a {text-decoration: none; padding: 20px;}
+#ItensMenu a:hover {text-decoration: underline; font-weight: bolder;}
+
+#IconeMenu {display: none;} 
+
+main {flex: auto; background: url('../imagens/capa-css-flexbox-2.png') no-repeat center; 
+        background-size: cover;}
+
+footer {background-color: black; color: white; padding: 20px; text-align: center;}
+
+@media (max-width: 600px) 
+{
+  h1 {font-size: 1.2em;}
+
+  #ItensMenu {display: none;}
+  #ItensMenu a {display: block; text-align: center; text-decoration: none; font-weight: bolder;
+                border-top: 2px solid darkgray;}
+  #ItensMenu a:hover {text-decoration: underline; background-color: blueviolet; color: white;}
+  
+  #IconeMenu {display: block; text-align: center; padding: 10px;}
+  #IconeMenu:hover {cursor: pointer;}
+  
+
+  main {flex: auto; background: url('../imagens/capa-css-flexbox-1.png') center;}
+  footer {font-size: .7em;}
+}
+
+/*
+dessa forma não ficou totalmente responsivo
+main {flex: auto; background-color: blueviolet; 
+        display: flex; justify-content: center; align-items: center;}
+main div {background: url('imagens/capa-css-flexbox-2.png') no-repeat; 
+            height: 85%; width: 80%;}
+ 
+*/

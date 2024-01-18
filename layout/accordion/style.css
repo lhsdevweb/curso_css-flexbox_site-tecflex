@@ -1,0 +1,52 @@
+* {margin: 0; padding: 0;}
+
+.container {display: flex; height: 94vh;}
+.accordion {margin: 0; padding: 0; flex: auto; border: 2px solid white;
+            background-position: center center; background-size: cover;}
+
+.pic01 {background-image: url('../../imagens/accordion/01-elektra_demolidor.jpg')}
+.pic01:hover {flex-basis: 25%;}
+.pic02 {background-image: url('../../imagens/accordion/02-tempestade.jpg')}
+.pic02:hover {flex-basis: 30%;}
+.pic03 {background-image: url('../../imagens/accordion/03-viuvanegra.jpg')}
+.pic03:hover {flex-basis: 30%;}
+.pic04 {background-image: url('../../imagens/accordion/04-venom.jpg')}
+.pic04:hover {flex-basis: 30%;}
+.pic05 {background-image: url('../../imagens/accordion/05-invisiblewoman.jpg')}
+.pic05:hover {flex-basis: 30%;}
+.pic06 {background-image: url('../../imagens/accordion/06-psylock.jpg')}
+.pic06:hover {flex-basis: 30%;}
+.pic07 {background-image: url('../../imagens/accordion/07-vampira.jpg')}
+.pic07:hover {flex-basis: 30%;}
+.pic08 {background-image: url('../../imagens/accordion/08-hulk.jpg')}
+.pic08:hover {flex-basis: 40%;}
+.pic09 {background-image: url('../../imagens/accordion/09-arlequina.jpg')}
+.pic09:hover {flex-basis: 30%;}
+.pic10 {background-image: url('../../imagens/accordion/10-vampirella_ladydeath.jpg')}
+.pic10:hover {flex-basis: 35%;}
+.pic11 {background-image: url('../../imagens/accordion/11-visão.jpg')}
+.pic11:hover {flex-basis: 35%;}
+.pic12 {background-image: url('../../imagens/accordion/12-supergirl.jpg')}
+.pic12:hover {flex-basis: 30%;}
+.pic13 {background-image: url('../../imagens/accordion/13-wolverinewoman.jpg')}
+.pic13:hover {flex-basis: 30%;}
+.pic14 {background-image: url('../../imagens/accordion/14-superman.jpg')}
+.pic14:hover {flex-basis: 25%;}
+
+.voltar {background-color: black; text-align: center; padding: 10px;}
+a {color: white; text-decoration: none;} 
+a:hover {text-decoration: underline;}
+
+
+/*
+p {display: none;}
+
+@media (max-width: 800px) 
+{
+    .container {display: none;}
+    body {display: flex; flex-direction: column; height: 100vh;
+            justify-content: center; align-items: center;
+            background-color: black;}
+    p {display: block; color: white; text-align: center;}        
+}
+*/
