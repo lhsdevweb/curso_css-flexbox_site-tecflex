@@ -5,14 +5,25 @@ header {display: flex; align-items: flex-start;}
 #header-img1 {flex: 60%;} #header-img2 {flex: 25%;}
 header img {width: 100%;}
 
-p {padding-top: 10px; font-weight: bold; text-align: center;}
+#titulo {display: flex; justify-content: space-around; align-items: center; padding: 10px;}
 
 main {display: flex; flex-wrap: wrap; padding: 0 4px;}
 
 section {flex: 25%; padding: 0 4px;}
 section img {width:100%; margin-top: 8px;} 
 
-@media (max-width: 800px) {#header-img2 {display: none} section {flex: 50%}}
+#coluna3 div {text-align: center; margin-top: 20px;}
 
-@media (max-width: 600px) {section {flex: 100%}}
+@media (max-width: 800px) 
+{
+    #header-img2 {display: none} 
+    #titulo h1 {font-size: 1em;}
+    section {flex: 50%}
+}
+
+@media (max-width: 600px) 
+{
+    #titulo h1 {font-size: smaller;}
+    section {flex: 100%} 
+}
 

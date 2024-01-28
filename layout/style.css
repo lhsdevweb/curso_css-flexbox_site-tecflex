@@ -5,39 +5,51 @@ body {display: flex; flex-direction: column; height: 100vh;}
 
 header {text-align: center; padding: 40px; background-color: blueviolet; color: white;} 
 
-#ItensMenu {display: block; text-align: center; padding: 20px;}
-#ItensMenu a {text-decoration: none; padding: 20px;}
-#ItensMenu a:hover {text-decoration: underline; font-weight: bolder;}
+/* MENU */
+#IconeMenu {display: none} #ItensMenuMovel {display: none;}
 
-#IconeMenu {display: none;} 
+.ItensMenu {display: flex; flex-wrap: wrap;}
+
+.ItensMenu > div {display: flex;} 
+.ql1 {width: 55%; justify-content: flex-end;} 
+.ql2 {width: 45%; justify-content: flex-start;}
+/*
+.ItensMenu .ql1 {...} .ItensMenu .ql2 {...}
+- o menu não quebra - 
+*/
+
+a {display: block; text-decoration: none; color: blueviolet; padding: 10px;} 
+a:hover {text-decoration: underline; color: blue; font-weight: bolder;}
+/* FIM MENU */
 
 main {flex: auto; background: url('../imagens/capa-css-flexbox-2.png') no-repeat center; 
         background-size: cover;}
 
 footer {background-color: black; color: white; padding: 20px; text-align: center;}
 
+@media (min-width: 601px) and (max-width: 820px) 
+{
+  h1 {font-size: 1.5em;} 
+  .ItensMenu > div {width: 100%; justify-content: center;}
+  main {background: url('../imagens/capa-css-flexbox-3.png') center;}
+}
+
 @media (max-width: 600px) 
 {
   h1 {font-size: 1.2em;}
 
-  #ItensMenu {display: none;}
-  #ItensMenu a {display: block; text-align: center; text-decoration: none; font-weight: bolder;
-                border-top: 2px solid darkgray;}
-  #ItensMenu a:hover {text-decoration: underline; background-color: blueviolet; color: white;}
+  .ItensMenu {display: none;}
   
   #IconeMenu {display: block; text-align: center; padding: 10px;}
   #IconeMenu:hover {cursor: pointer;}
   
+  #ItensMenuMovel a {display: block; text-align: center; text-decoration: none; padding: 20px;
+                     font-weight: bolder; border-top: 2px solid darkgray; color: blueviolet;}
+  #ItensMenuMovel a:hover {text-decoration: underline; color: white;
+                            background-color: blueviolet;}
+   
+  main {background: url('../imagens/capa-css-flexbox-1.png') center;}
 
-  main {flex: auto; background: url('../imagens/capa-css-flexbox-1.png') center;}
   footer {font-size: .7em;}
 }
 
-/*
-dessa forma não ficou totalmente responsivo
-main {flex: auto; background-color: blueviolet; 
-        display: flex; justify-content: center; align-items: center;}
-main div {background: url('imagens/capa-css-flexbox-2.png') no-repeat; 
-            height: 85%; width: 80%;}
- 
-*/
