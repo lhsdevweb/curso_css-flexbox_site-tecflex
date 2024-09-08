@@ -12,7 +12,8 @@ main {display: flex; flex-wrap: wrap; padding: 0 4px;}
 section {flex: 25%; padding: 0 4px;}
 section img {width:100%; margin-top: 8px;} 
 
-#coluna3 div {text-align: center; margin-top: 20px;}
+#coluna3 div {display: block; text-align: center; margin-top: 20px;}
+#coluna4 div {display: none;}
 
 @media (max-width: 800px) 
 {
@@ -25,5 +26,7 @@ section img {width:100%; margin-top: 8px;}
 {
     #titulo h1 {font-size: smaller;}
     section {flex: 100%} 
+    #coluna3 div {display: none;}
+    #coluna4 div {display: block; text-align: center; margin: 10px 0 20px 0;}
 }
 
