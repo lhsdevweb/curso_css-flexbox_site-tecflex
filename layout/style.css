@@ -25,26 +25,31 @@ header {text-align: center; padding: 40px; background-color: blueviolet; color: 
 main {flex: auto; background: url('../imagens/capa-css-flexbox-2.png') no-repeat center; 
         background-size: cover;}
 
-footer {background-color: black; color: white; padding: 20px; 
-        text-align: center; line-height: 1.5em;}
-footer p {display: flex; justify-content: center;}
-footer div {display: inline;}
+footer {background-color: black; color: white; padding: 20px; line-height: 1.5em;}
+footer div {display: flex; justify-content: center;}
 footer a {color: yellow; text-decoration: none;}
 footer a:hover {text-decoration: underline;}
-footer #rodape1 {display: block;}
-footer #rodape2 {display: none;}
+#paragrafo3 {display: none;}
+#paragrafo4 {display: none;}
 
-@media (min-width: 601px) and (max-width: 820px) 
+@media (min-height: 1200px) {
+  main {background: url('../imagens/capa-css-flexbox-3.png') no-repeat center black; 
+        background-size: contain;}
+}
+
+@media (max-width: 820px) 
 {
   h1 {font-size: 1.5em;} 
   .ItensMenu > div {width: 100%; justify-content: center;}
-  main {background: url('../imagens/capa-css-flexbox-3.png') center;}
+  main {background: url('../imagens/capa-css-flexbox-3.png') no-repeat center black; 
+        background-size: contain;}
+  #paragrafo2 {display: none;}
+  #paragrafo3 {display: block; text-align: center;}
+  #paragrafo3 div {display: flex; justify-content: center;}
 }
 
 @media (max-width: 600px) 
 {
-  h1 {font-size: 1.2em;}
-
   .ItensMenu {display: none;}
   
   #IconeMenu {display: block; text-align: center; padding: 10px;}
@@ -57,8 +62,18 @@ footer #rodape2 {display: none;}
    
   main {background: url('../imagens/capa-css-flexbox-1.png') center;}
 
-  footer {font-size: .7em;}
-  footer #rodape1 {display: none;}
-  footer #rodape2 {display: block;}  
+  #paragrafo1 {display: block; text-align: center;}
+  #paragrafo1 .espaço {display: none;}
+}
+
+@media (max-width: 500px) {
+  h1 {font-size: 1.2em;}
+  footer {font-size: .8em;}
+}
+
+@media (max-width: 400px) {
+  #paragrafo3 {display: none;}
+  #paragrafo4 {display: block; text-align: center;}
+  #paragrafo4 div {display: flex; justify-content: center;}
 }
 
