@@ -66,6 +66,7 @@ footer a:hover {text-decoration: underline;}
   footer {font-size: .8em;}
 }
 @media (max-width: 400px) {
+  main {background-size: 250%;}
   #paragrafo3 {display: none;}
   #paragrafo4 {display: block; text-align: center;}
   #paragrafo4 div {display: flex; justify-content: center;}
